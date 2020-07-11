@@ -1,0 +1,302 @@
+@import url('fonts.css');
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+body {
+	font-family: 'Helvetica Neue';
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* Header
+======================== */
+
+.header__inner {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__inner:after {
+	content: '';
+	display: block;
+	position: absolute;
+
+	width: 157px;
+	height: 157px;
+	background-color: #bfb2b2;
+	border-radius: 50%;
+	top: 17px;
+	left: 99px;
+}
+
+.header__title {
+	letter-spacing: 9px;
+	font-weight: 300;
+	font-size: 50px;
+}
+
+.title__name {
+	font-style: italic;
+	font-weight: 100;
+	font-size: 60px;
+	position: relative;
+}
+
+.header__img {
+	max-height: 700px;
+}
+
+.header__title {
+	position: relative;
+	text-align: end;
+	align-self: center;
+	line-height: 1.75;
+
+	/* box-shadow: 5px 5px 10px #000; */
+}
+
+.title__saloon:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 484px;
+	height: 37px;
+	background-color: #c2a6b4;
+	top: 54px;
+	left: 28px;
+	z-index: -1;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+}
+
+.title__name:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 389px;
+	height: 37px;
+	background-color: #c2a6b4;
+	top: 48px;
+  left: -14px;
+	z-index: -1;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+}
+
+.btn {
+	text-decoration: none;
+	color: #fff;
+
+	font-family: "Helvetica Neue";
+	font-size: 24px;
+	font-weight: 100;
+	letter-spacing: 3.84px;
+	padding: 9px 37px;
+
+	border: 2px solid #ffffff;
+	background-color: #2d2d2d;
+
+	z-index: 100;
+
+	transition: color 0.2s linear,
+	background-color 0.2s linear,
+	opacity 0.2s linear;
+}
+
+.btn:hover {
+	color: #2d2d2d;
+	background-color: #fff;
+	/* border-color: #2d2d2d; */
+	opacity: 0.8;
+}
+
+.header__btn {
+	position: absolute;
+	left: 450px;
+	top: 572px;
+}
+
+/* Navigation 
+======================== */
+.nav {
+	display: flex;
+	flex-direction: column;
+	padding: 15px 8px;
+	width: 69px;
+
+	background-color: #2d2d2d;
+}
+
+.nav > * {
+	display: block;
+	font-size: 0;
+	width: 52px;
+	/* height: 40px; */
+
+	/* background-color: red; */
+}
+
+.nav > *:not(:nth-child(1)) {
+	margin-top: 32px;
+}
+
+.nav__burger {
+	padding: 14px 0;
+	position: relative;
+}
+
+.nav__burger span {
+	display: block;
+	width: 52px;
+	height: 5px;
+	background-color: #fff;
+	border-radius: 2px;
+}
+
+.nav__burger:after,
+.nav__burger:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 52px;
+	height: 5px;
+	background-color: #fff;
+	border-radius: 2px;
+}
+
+.nav__burger:after {
+	transform: translateY(10px);
+}
+
+.nav__burger:before {
+	transform: translateY(-15px);
+}
+
+.nav__call {
+	display: block;
+	position: relative;
+	padding: 15px 5px;
+
+}
+
+.nav__call:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url('../img/svg/phone.svg') center no-repeat;
+	transform: rotate(8deg);
+}
+
+.nav__list {
+	display: block;
+	padding: 16px 5px;
+	background: url('../img/svg/list.svg') top center no-repeat;
+	background-size: contain;
+}
+
+.nav > *:hover {
+	opacity: 0.5;
+}
+
+
+
+/* About
+==================== */
+
+.about {
+	position: relative;
+	margin: 68px 0 157px 98px;
+}
+
+.about__title {
+	color: #2d2d2d;
+	font-family: "Helvetica Neue";
+	font-size: 40px;
+	font-weight: 300;
+	margin-bottom: 46px;
+	padding-left: 48px;
+}
+
+.about__text {
+	color: #2d2d2d;
+	font-family: "Helvetica Neue";
+	font-size: 19px;
+	font-weight: 300;
+
+	padding: 34px 500px 23px 29px;
+	margin: 0px 50px 0 46px;
+	border: 1px solid #2d2d2d;
+	line-height: 23px;
+}
+
+.about__img {
+	position: absolute;
+	top: 35px;
+	left: 659px;
+
+	box-shadow: 27px -23px 0px 0px #c2a6b4;;
+}
+
+
+
+/* Services 
+======================= */
+.services__item {
+	display: block;
+	position: relative;
+
+	height: auto;
+}
+
+.services__title {
+	color: #2d2d2d;
+	font-family: "Helvetica Neue";
+	font-size: 40px;
+	font-weight: 300;
+
+	margin-bottom: 16px;
+}
+
+.services__sign {
+	color: #2d2d2d;
+	font-family: "Helvetica Neue";
+	font-weight: 300;
+	position: absolute;
+
+	top: 25px;
+	left: -53px;
+	transform: rotateZ(270deg);
+}
+
+.services__sign:after {
+	content: '';
+	display: block;
+	position: absolute;
+
+	width: 178px;
+	height: 1px;
+	background-color: #2d2d2d;
+
+	top: 11px;
+	right: 80px;
+}
+
+
+
+
